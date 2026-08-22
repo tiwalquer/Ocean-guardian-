@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://SalacoaLixo.png" id="1_saco1"]
+[ext_resource type="Script" path="res://Scene/SacolaLixo.gd" id="2_saco2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_saco1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saco1"]
+atlas = ExtResource("1_saco1")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saco2"]
+atlas = ExtResource("1_saco1")
+region = Rect2(320, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saco3"]
+atlas = ExtResource("1_saco1")
+region = Rect2(0, 320, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saco4"]
+atlas = ExtResource("1_saco1")
+region = Rect2(320, 320, 320, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_saco1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_saco1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_saco2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_saco3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_saco4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SacolaLixo" type="CharacterBody2D"]
+script = ExtResource("2_saco2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_saco1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 7
+position = Vector2(-11.000008, -26.000002)
+scale = Vector2(0.56093746, 0.640625)
+sprite_frames = SubResource("SpriteFrames_saco1")

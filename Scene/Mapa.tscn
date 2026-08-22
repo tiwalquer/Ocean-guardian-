@@ -1,0 +1,263 @@
+[gd_scene format=3 uid="uid://jlb55hda82nd"]
+
+[ext_resource type="PackedScene" uid="uid://b60f5ea18qxil" path="res://Scene/Tartaruga.tscn" id="1_jwj0k"]
+[ext_resource type="Texture2D" uid="uid://dgbgviuxaokpo" path="res://SPRIT_GODOT/FundoDoMar/FundoMar4.png" id="2_5jw1w"]
+[ext_resource type="Texture2D" uid="uid://d11lmwryijq2o" path="res://SPRIT_GODOT/FundoDoMar/FundoMar10.png" id="3_2nclf"]
+[ext_resource type="PackedScene" uid="uid://cf0nw26cxygua" path="res://Scene/cola.tscn" id="3_r0mk8"]
+[ext_resource type="Script" uid="uid://cqrcqei8vffk3" path="res://Scene/lamina_mouse.gd" id="4_8dssv"]
+[ext_resource type="Texture2D" uid="uid://bjc5qe1mgsrto" path="res://SPRIT_GODOT/FundoDoMar/fundoMar1.png" id="4_lr34p"]
+[ext_resource type="Texture2D" uid="uid://u2ule2l4a7t1" path="res://SPRIT_GODOT/FundoDoMar/FundoMar2.png" id="5_ru1ts"]
+[ext_resource type="PackedScene" path="res://Scene/sacola.tscn" id="5_sacola"]
+[ext_resource type="PackedScene" path="res://Scene/canudo.tscn" id="6_canudo"]
+[ext_resource type="Texture2D" uid="uid://dx682nj8h8pa2" path="res://SPRIT_GODOT/FundoDoMar/FundoMar11.png" id="6_qugpk"]
+[ext_resource type="Texture2D" uid="uid://8oet2kexbrpy" path="res://SPRIT_GODOT/FundoDoMar/FundoMar5.png" id="7_41uf8"]
+[ext_resource type="Script" uid="uid://bu6j74y78wtyw" path="res://Scene/Spawner.gd" id="7_spawner"]
+[ext_resource type="Texture2D" uid="uid://dbe8d8txvytum" path="res://SPRIT_GODOT/FundoDoMar/FundoMar7.png" id="8_hxf6h"]
+[ext_resource type="Script" uid="uid://bhmthrw8rxwf3" path="res://Scene/UI.gd" id="8_ui"]
+[ext_resource type="PackedScene" path="res://Scene/barril1.tscn" id="9_barril1"]
+[ext_resource type="Texture2D" uid="uid://dl08wis26frxm" path="res://SPRIT_GODOT/FundoDoMar/FundoMar6.png" id="9_se18e"]
+[ext_resource type="Texture2D" uid="uid://j8fmatwmo5e7" path="res://SPRIT_GODOT/FundoDoMar/FundoMar9.png" id="10_1jlid"]
+[ext_resource type="PackedScene" path="res://Scene/barril2.tscn" id="10_barril2"]
+[ext_resource type="Texture2D" uid="uid://dcxoc7eukpchr" path="res://SPRIT_GODOT/FundoDoMar/FundoMar12.png" id="11_k66j1"]
+[ext_resource type="PackedScene" path="res://Scene/pneu.tscn" id="11_pneu"]
+[ext_resource type="Script" uid="uid://be3fu3qr2q6bf" path="res://Scene/SpawnerPeixes.gd" id="12_spawnerpeixes"]
+[ext_resource type="PackedScene" path="res://Scene/peixe_amarelo.tscn" id="13_peixeamarelo"]
+[ext_resource type="PackedScene" path="res://Scene/peixe_azul.tscn" id="14_peixeazul"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcdgh"]
+size = Vector2(1330, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4if3"]
+atlas = ExtResource("2_5jw1w")
+region = Rect2(0, 0, 1261, 832)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61rrp"]
+atlas = ExtResource("3_2nclf")
+region = Rect2(0, 0, 1261, 832)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjy7d"]
+atlas = ExtResource("4_lr34p")
+region = Rect2(0, 0, 1263, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yexfj"]
+atlas = ExtResource("5_ru1ts")
+region = Rect2(0, 0, 1263, 741)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2i6gi"]
+atlas = ExtResource("6_qugpk")
+region = Rect2(0, 0, 1263, 750)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3ti6"]
+atlas = ExtResource("7_41uf8")
+region = Rect2(0, 0, 1263, 755)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijj57"]
+atlas = ExtResource("8_hxf6h")
+region = Rect2(0, 0, 1263, 848)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3hci"]
+atlas = ExtResource("9_se18e")
+region = Rect2(0, 0, 1263, 848)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4mew"]
+atlas = ExtResource("10_1jlid")
+region = Rect2(0, 0, 1263, 848)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_riai0"]
+atlas = ExtResource("11_k66j1")
+region = Rect2(0, 0, 1263, 742)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k66j1"]
+animations = [{
+"frames": [{
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_g4if3")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_61rrp")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_gjy7d")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_yexfj")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_2i6gi")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_f3ti6")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_ijj57")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_s3hci")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_m4mew")
+}, {
+"duration": 60.0,
+"texture": SubResource("AtlasTexture_riai0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ktb2n"]
+radius = 45.0
+
+[node name="Node2D" type="Node2D" unique_id=207446723]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2121491810]
+position = Vector2(88, 38)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1674309674]
+light_mask = 1023
+position = Vector2(572, 738.5)
+shape = SubResource("RectangleShape2D_mcdgh")
+debug_color = Color(0.14509805, 0.64705884, 0, 1)
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="StaticBody2D/CollisionShape2D" unique_id=1211673273]
+texture_repeat = 1
+position = Vector2(-4.9999237, -411.24997)
+scale = Vector2(1.189532, 1.0961539)
+sprite_frames = SubResource("SpriteFrames_k66j1")
+autoplay = "default"
+
+[node name="Spawner" type="Node2D" parent="." unique_id=313718338]
+script = ExtResource("7_spawner")
+cenas_lixo = Array[PackedScene]([ExtResource("3_r0mk8"), ExtResource("5_sacola"), ExtResource("6_canudo"), ExtResource("9_barril1"), ExtResource("10_barril2"), ExtResource("11_pneu")])
+
+[node name="SpawnerPeixes" type="Node2D" parent="." unique_id=1844997332]
+script = ExtResource("12_spawnerpeixes")
+cenas_peixes = Array[PackedScene]([ExtResource("13_peixeamarelo"), ExtResource("14_peixeazul")])
+
+[node name="LaminaMouse" type="Area2D" parent="." unique_id=69987705]
+script = ExtResource("4_8dssv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LaminaMouse" unique_id=1395340713]
+position = Vector2(-2, 6)
+shape = SubResource("CircleShape2D_ktb2n")
+
+[node name="CharacterBody2D" parent="." unique_id=408678035 instance=ExtResource("1_jwj0k")]
+position = Vector2(345, 680)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=96152972]
+process_mode = 3
+script = ExtResource("8_ui")
+
+[node name="Control" type="Control" parent="UI" unique_id=958941994]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 5.0
+offset_right = -4.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LabelPontos" type="Label" parent="UI/Control" unique_id=1710991636]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 300.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 28
+text = "Pontos: 0"
+
+[node name="LabelSuper" type="Label" parent="UI/Control" unique_id=1009421569]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 56.0
+offset_right = 420.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 0.9, 0.3, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 18
+text = "Super em: 200 pts"
+
+[node name="LabelLixo" type="Label" parent="UI/Control" unique_id=341274377]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 88.0
+offset_right = 420.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(1, 0.5, 0.4, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 18
+text = "Lixo no chão: 0/20"
+
+[node name="PainelGameOver" type="Control" parent="UI/Control" unique_id=1906058552]
+process_mode = 3
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fundo" type="ColorRect" parent="UI/Control/PainelGameOver" unique_id=434387547]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="CaixaGameOver" type="VBoxContainer" parent="UI/Control/PainelGameOver" unique_id=1363323226]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -110.0
+offset_right = 220.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="LabelGameOver" type="Label" parent="UI/Control/PainelGameOver/CaixaGameOver" unique_id=665851269]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.3, 0.3, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 44
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="LabelPontuacaoFinal" type="Label" parent="UI/Control/PainelGameOver/CaixaGameOver" unique_id=458873484]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 24
+text = "Pontuação final: 0"
+horizontal_alignment = 1
+
+[node name="BotaoReiniciar" type="Button" parent="UI/Control/PainelGameOver/CaixaGameOver" unique_id=769939764]
+process_mode = 3
+custom_minimum_size = Vector2(220, 56)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "Jogar novamente"
