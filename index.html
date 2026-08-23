@@ -9,6 +9,10 @@ html, body, #canvas {
 	margin: 0;
 	padding: 0;
 	border: 0;
+
+	/*adicionei */
+	width: 100vw;
+	height: 100vh;
 }
 
 body {
@@ -16,10 +20,15 @@ body {
 	background-color: black;
 	overflow: hidden;
 	touch-action: none;
+
+	display: flex; /*adicionei essas 3 linhas */
+	justify-content: center;
+	align-items: center;
 }
 
 #canvas {
 	display: block;
+	margin: auto; /*mudei */
 }
 
 #canvas:focus {
