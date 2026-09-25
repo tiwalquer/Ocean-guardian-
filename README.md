@@ -24,12 +24,12 @@
   * Fonte: OpenGameArt
 
 * **prologue-theme** por *Cleyton Kauffman*
- * Licença: CC0 (Domínio Público)
- * Fonte: OpenGameArt
+  * Licença: CC0 (Domínio Público)
+  * Fonte: OpenGameArt
 
 * **underwater-theme** por *Cleyton Kauffman*
- * Licença: CC0 (Domínio Público)
- * Fonte: OpenGameArt   
+  * Licença: CC0 (Domínio Público)
+  * Fonte: OpenGameArt   
 
 
 
