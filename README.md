@@ -12,16 +12,16 @@
   * Fonte: OpenGameArt
 
 * **Knife sharpening slice 1** por  *The Berklee College of Music*
- * Licença: [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/)
- * Fonte: OpenGameArt
+  * Licença: [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+  * Fonte: OpenGameArt
 
 * **swish-bamboo-stick-weapon-swhoshes** por *qubodup*
- * Licença: CC0 (Domínio Público)
- * Fonte: OpenGameArt
+  * Licença: CC0 (Domínio Público)
+  * Fonte: OpenGameArt
 
 * **applause** por *Blender Foundation*
- * Licença: [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/)
- * Fonte: OpenGameArt
+  * Licença: [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+  * Fonte: OpenGameArt
 
 * **prologue-theme** por *Cleyton Kauffman*
  * Licença: CC0 (Domínio Público)
